@@ -1,25 +1,64 @@
 aid: getpolymorph-com
+
 name: Polymorph
+
+image: https://situslinklogin.com/img/banner.webp
+
 description: 'Polymorph is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
   backed by techstars) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/getpolymorph-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- techstars
+
 common:
+- type: Hosts
+  url: hosts/getpolymorph-com-hosts.yml
+- type: Vendors
+  url: vendors/getpolymorph-com-vendors.yml
+- type: Blog
+  url: https://blog.getpolymorph.com/
+- type: DomainSecurity
+  url: security/getpolymorph-com-domain-security.yml
 - type: Website
   url: https://getpolymorph.com/
+
+apis: []
+
+x-backed-by:
+- techstars
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The homepage redirects to a JavaScript-heavy login portal with no readable API documentation.
+  evidence:
+    - url: https://getpolymorph.com
+      status: 301
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

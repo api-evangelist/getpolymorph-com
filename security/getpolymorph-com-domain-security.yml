@@ -1,0 +1,15 @@
+generated: '2026-10-24'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: getpolymorph.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 24 00:13:59 2026 GMT
+  hsts: false
+domains:
+- domain: getpolymorph.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
